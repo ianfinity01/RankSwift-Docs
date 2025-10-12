@@ -6,5 +6,6 @@ nav:
     - Server/configuration.md
     - Server/commands.md
     - Server/stress-testing.md
+    - Server/api.md
   - Roblox
   - demo.md
