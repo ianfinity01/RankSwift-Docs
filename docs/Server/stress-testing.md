@@ -30,4 +30,4 @@ Luckily, one thing that **doesn't** vary between devices is the RAM usage of a b
 !!! failure "Never Use Too Much RAM"
     Never set your board up so that it could take more RAM than you have available. Utilize the size cap feature to minimize RAM usage as described in [the setup page](./setup.md).
 
-Now that you know what your server can handle, let's see how to interact with your server using it's [API](./api.md).
+Now that you know what your server can handle, let's see how to interact with your server using it's [API](./API.md).

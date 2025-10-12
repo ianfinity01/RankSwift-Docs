@@ -387,7 +387,7 @@ Response:
 - `"After"`
 - `"Before"`
 - `"Around"`
-- `"Range"`
+- `"Range"` 
 
 Any other value will result in a `400 BadRequest` error. Note that you cannot have batch requests inside batch requests.
 
