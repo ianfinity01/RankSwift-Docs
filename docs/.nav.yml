@@ -1,0 +1,10 @@
+nav:
+  - RankSwift: index.md
+  - Server:
+    - Server/installation.md
+    - Server/setup.md
+    - Server/configuration.md
+    - Server/commands.md
+    - Server/stress-testing.md
+  - Roblox
+  - demo.md

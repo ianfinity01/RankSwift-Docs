@@ -1,0 +1,45 @@
+site_name: RankSwift Docs
+site_url: https://idkyet.help
+theme:
+  name: material
+  logo: assets/RSVector.png
+  favicon: assets/RSIcon.ico
+  features:
+    - navigation.footer
+  palette: 
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark Theme
+      primary: red
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light Theme
+      primary: red
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format 
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+
+extra:
+  social:
+    - icon: simple/gmail
+      link: mailto:ianfinity1@gmail.com
+
+plugins:
+  - search
+  - awesome-nav
