@@ -7,5 +7,9 @@ nav:
     - Server/commands.md
     - Server/stress-testing.md
     - Server/API.md
-  - Roblox
-  - demo.md
+  - Roblox: 
+    - Roblox/setup.md
+    - Roblox/configuration.md
+    - Roblox/basic-usage.md
+    - Roblox/demo.md
+  - FAQ: FAQ.md
