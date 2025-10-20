@@ -1,12 +1,12 @@
-Don't worry! This will be easy, we made you a ModuleScript that will make it very easy to interface with your Leaderboard Server. You can get it [here](https://create.roblox.com/store/asset/120356645529088){:target="_blank"}.
+Don't worry! This will be easy, we made you a package that will make it very easy to interface with your Leaderboard Server. You can get it [here](https://create.roblox.com/store/asset/120356645529088){:target="_blank"}.
 
 ## Importing the Module
 
-Once you have gotten the module from the Roblox website, open your Roblox Studio on the game you want to connect your leaderboard to. Open the toolbox, go to the Inventory tab (denoted by 4 boxes), and find the Module under "My Models". Once you have imported the Module, it is suggested that you put it in ServerScriptService. This module cannot be used by clients.
+Once you have gotten the package from the Roblox website, open your Roblox Studio on the game you want to connect your leaderboard to. Open the toolbox, go to the Inventory tab (denoted by 4 boxes), and find the package under "My Models". Once you have imported the package, it is suggested that you put the folder in ServerScriptService. The main module in it cannot be used by clients.
 
 ## Creating a Board
 
-In a server script or module script, require the module. You now need to create Board objects that will serve as connections to your RankSwift boards. Although you can create multiple Board objects for multiple RankSwift boards, you can only have one Board per RankSwift Board. If you create multiple Boards on the same Roblox Server for the same RankSwift Board, things may not behave as intended. Because of this, if you need to access the Board for a specific RankSwift Board in multiple scripts, it is suggested that you store it in a ModuleScript so that it is only created once.
+In a server script or module script, require the "Board" module in the folder. This is the main module you'll be using for this. You now need to create Board objects that will serve as connections to your RankSwift boards. Although you can create multiple Board objects for multiple RankSwift boards, you can only have one Board per RankSwift Board. If you create multiple Boards on the same Roblox Server for the same RankSwift Board, things may not behave as intended. Because of this, if you need to access the Board for a specific RankSwift Board in multiple scripts, it is suggested that you store it in a ModuleScript so that it is only created once.
 
 Boards take the following parameters:
 
@@ -14,6 +14,9 @@ Boards take the following parameters:
 - `port` (number): The port that the server is running on. Make sure the port is correctly forwarded on the server!
 - `key` (Secret or string): The API key for the board.
 - `config` ([Config](./configuration.md)): The configuration for this Board object.
+
+!!! warning "Change Your Game Settings"
+    This module makes use of HTTP requests to perform operations on your leaderboard. For it to work, you will need to go to your game settings and toggle "Allow HTTP requests".
 
 A script creating a Board object could look like this:
 ```lua
