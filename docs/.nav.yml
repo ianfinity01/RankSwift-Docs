@@ -13,5 +13,9 @@ nav:
     - Roblox/basic-usage.md
     - Roblox/limiters.md
     - Roblox/Advanced-Usage
+    - Example Tutorial:
+      - Overview: Roblox/Example-Tutorial/overview.md
+      - ServerScript: Roblox/Example-Tutorial/serverscript.md
+      - LocalScript: Roblox/Example-Tutorial/localscript.md
     - Roblox/demo.md
   - FAQ: FAQ.md
